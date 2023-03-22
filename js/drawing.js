@@ -37,7 +37,7 @@ const draw = (e) => {
   ctx.lineWidth = lineWidth;
   ctx.lineCap = 'round';
 
-  ctx.lineTo(e.clientX, e.clientY - canvas.offsetTop);
+  ctx.lineTo(e.clientX - canvasOffsetX, e.clientY);
   ctx.stroke();
 };
 
