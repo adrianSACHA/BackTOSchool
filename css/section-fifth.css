@@ -312,8 +312,9 @@
 }
 
 .fifth__bottom__ai {
-  display: grid;
-  grid-template-columns: auto 1fr;
+  display: flex;
+  height: 100%;
+  /* grid-template-columns: auto 1fr; */
 }
 
 @media (max-width: 768px) {
@@ -324,6 +325,12 @@
 
 .bottom__ai__divider {
   width: 96px;
+}
+
+#toolbar {
+  display: flex;
+    flex-direction: column;
+    width: 70px;
 }
 
 .bottom__ai__drawing {
