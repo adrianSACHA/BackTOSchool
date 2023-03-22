@@ -8,18 +8,18 @@ const canvasOffsetY = canvas.offsetTop;
 canvas.width = window.innerWidth - canvasOffsetX;
 canvas.height = window.innerHeight - canvasOffsetY;
 
-let isDrawing = false;
+let isPainting = false;
 let lineWidth = 5;
 let startX;
 let startY;
 
-toolbar.addEventListener("click", e => {
+toolbar.addEventListener("click", (e) => {
   if (e.target.id === "clear") {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
   }
 });
 
-toolbar.addEventListener("change", e => {
+toolbar.addEventListener("change", (e) => {
   if (e.target.id === "stroke") {
     ctx.strokeStyle = e.target.value;
   }
@@ -30,36 +30,27 @@ toolbar.addEventListener("change", e => {
 });
 
 const draw = (e) => {
-  if (!isDrawing) {
+  if (!isPainting) {
     return;
   }
-  ctx.beginPath();
-  // ctx.moveTo(lastX, lastY);
-  ctx.lineTo(e.offsetX - canvasOffsetX, e.offsetY);
-  // ctx.strokeStyle = lineColor;
+
   ctx.lineWidth = lineWidth;
   ctx.lineCap = "round";
-  // ctx.lineJoin = lineJoin;
+
+  ctx.lineTo(e.clientX - canvasOffsetX, e.clientY);
   ctx.stroke();
-  // [lastX, lastY] = [e.offsetX, e.offsetY];
 };
 
 canvas.addEventListener("mousedown", (e) => {
-  isDrawing = true;
+  isPainting = true;
   startX = e.clientX;
   startY = e.clientY;
 });
 
 canvas.addEventListener("mouseup", (e) => {
-  isDrawing = false;
+  isPainting = false;
   ctx.stroke();
   ctx.beginPath();
 });
 
 canvas.addEventListener("mousemove", draw);
-
-// let lineColor = "black";
-// let lineCap = "round";
-// let lineJoin = "round";
-// let lastX = 0;
-// let lastY = 0;
