@@ -329,9 +329,9 @@
 .bottom__ai__drawing {
   overflow: hidden;
   background-color: white;
-  height: 100%;
+  height: 500px;
   cursor: pointer;
-  cursor: url('../images/section-fifth/kredka.cur') 5 5, pointer;
+  /* cursor: url('../images/section-fifth/kredka.cur') 5 5, pointer; */
 }
 .bottom__ai__drawing:hover {
 }
