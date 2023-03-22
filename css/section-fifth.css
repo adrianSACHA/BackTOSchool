@@ -1,0 +1,340 @@
+.section__fifth {
+  height: 2054px;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: linear-gradient(
+    to bottom,
+    #fff 0,
+    #fff 16%,
+    #96bad8 16%,
+    #96bad8 100%
+  );
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .section__fifth {
+    height: 2508px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section__fifth {
+    height: 1091px;
+  }
+}
+
+.section__fifth__wrapper {
+}
+
+@media (max-width: 768px) {
+  .section__fifth__wrapper {
+  }
+}
+
+.section__fifth__pictures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .section__fifth__pictures {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+.fifth__pictures__one {
+  display: grid;
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .fifth__pictures__one {
+    display: grid;
+    grid-column: unset;
+    min-height: 754px;
+    height: 100%;
+    align-items: start;
+  }
+}
+
+@media (max-width: 320px) {
+  .fifth__pictures__one {
+    height: 100%;
+    min-height: 325px;
+    align-items: start;
+  }
+}
+
+.fifth__pictures__first {
+  width: 100%;
+  max-width: 1074px;
+  height: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .fifth__pictures__first {
+    max-width: 829px;
+    height: auto;
+    overflow-x: hidden;
+    position: absolute;
+    left: -40px;
+  }
+}
+
+@media (max-width: 320px) {
+  .fifth__pictures__first {
+    min-height: 227px;
+    height: auto;
+    min-width: 341px;
+    margin-left: -1px;
+  }
+}
+
+.fifth__pictures__two {
+  display: grid;
+  margin-right: 4.8em;
+  width: 100%;
+  height: auto;
+  justify-content: right;
+}
+
+@media (max-width: 768px) {
+  .fifth__pictures__two {
+    grid-template-columns: 1fr 1fr;
+    background-image: url("../images/section-fifth/4F_BTS_LANDING_DESKTOP1_0020_kratka.png");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-size: 55%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .fifth__pictures__two {
+    grid-template-columns: 1fr 1fr;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-size: 200px;
+  }
+}
+
+.fifth__pictures__second {
+  max-width: 497px;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .fifth__pictures__second {
+    width: 100%;
+    min-width: 540px;
+    height: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .fifth__pictures__second {
+    min-width: 228px;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.fifth__pictures__three {
+  width: 100%;
+  height: auto;
+  padding-top: 45px;
+  background-image: url("../images/section-fifth/4F_BTS_LANDING_DESKTOP1_0020_kratka.png");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: 577px;
+  margin-left: -4.8em;
+}
+
+@media (max-width: 768px) {
+  .fifth__pictures__three {
+    display: grid;
+    background-image: unset;
+    padding-top: 0;
+    padding-right: 0;
+    justify-items: end;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .fifth__pictures__three {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.fifth__pictures__third {
+  width: 100%;
+  max-width: 399px;
+  height: auto;
+  margin-left: 3.9em;
+}
+
+@media (max-width: 768px) {
+  .fifth__pictures__third {
+    display: grid;
+    grid-column: 2;
+    width: 100%;
+    min-width: 386px;
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .fifth__pictures__third {
+    display: grid;
+    grid-column: 2;
+    width: 100%;
+    min-width: 163px;
+    height: auto;
+  }
+}
+
+.section__fifth__bottom {
+  height: 599px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .section__fifth__bottom {
+    grid-template-columns: 1fr;
+    height: 400px;
+  }
+}
+
+@media (max-width: 320px) {
+  .section__fifth__bottom {
+    display: grid;
+    height: 174px;
+    justify-content: center;
+  }
+}
+
+.fifth__bottom__menu {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .fifth__bottom__menu {
+    grid-template-rows: 1fr;
+  }
+}
+
+.bottom__menu__header {
+  padding-top: 160px;
+  font-size: 45px;
+  font-weight: bolder;
+  letter-spacing: 0.05em;
+  color: #f3e261;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .bottom__menu__header {
+    display: none;
+  }
+}
+
+.bottom__menu__buttons {
+  display: grid;
+  grid-gap: 27px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  height: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .bottom__menu__buttons {
+    grid-gap: 47px;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .bottom__menu__buttons {
+    grid-gap: 20px;
+    margin-right: 0;
+  }
+}
+
+.fifth__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 239px;
+  height: 42px;
+  border: 0;
+  background-color: #252d33;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Lab Grotesque", sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.18em;
+}
+
+@media (max-width: 768px) {
+  .fifth__button {
+    width: 435px;
+    height: 78px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 320px) {
+  .fifth__button {
+    width: 140px;
+    height: 25px;
+    font-size: 7px;
+  }
+}
+
+.fifth__button:hover {
+  background-color: #f3e261;
+  color: #252d33;
+  cursor: pointer;
+}
+
+.fifth__bottom__ai {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+@media (max-width: 768px) {
+  .fifth__bottom__ai {
+    display: none;
+  }
+}
+
+.bottom__ai__divider {
+  width: 96px;
+}
+
+.bottom__ai__drawing {
+  overflow: hidden;
+  background-color: white;
+  height: 100%;
+  cursor: pointer;
+  cursor: url('../images/section-fifth/kredka.cur') 5 5, pointer;
+}
+.bottom__ai__drawing:hover {
+}
+
+.toolbar {
+}

@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+.body {
+  font-family: "Hepta Slab", sans-serif;
+  text-align: center;
+  background-color: #fff;
+  word-break: break-word;
+  max-width: 1242px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.numbers--animation {
+  animation: slide-in-right 1s ease-out;
+}
+
+.numbers--animation:hover {
+  animation: shake 0.3s linear infinite;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0%);
+  }
+
+  10% {
+    transform: translateX(5%);
+  }
+
+  20% {
+    transform: translateX(-5%);
+  }
+
+  30% {
+    transform: translateX(5%);
+  }
+
+  40% {
+    transform: translateX(-5%);
+  }
+
+  50% {
+    transform: translateX(5%);
+  }
+
+  60% {
+    transform: translateX(-5%);
+  }
+
+  70% {
+    transform: translateX(5%);
+  }
+
+  80% {
+    transform: translateX(-5%);
+  }
+
+  90% {
+    transform: translateX(5%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bounce-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
