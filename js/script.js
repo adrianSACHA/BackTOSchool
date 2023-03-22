@@ -17,37 +17,37 @@ function showSlides(n) {
   dots[slideIndex - 1].classList.add("active");
 }
 
-const sliderWidth =
-  document.querySelector(".slider").offsetWidth -
-  document.querySelector(".slider-dot").offsetWidth;
+// const sliderWidth =
+//   document.querySelector(".slider").offsetWidth -
+//   document.querySelector(".slider-dot").offsetWidth;
 
-document.querySelector(".panorama").style.width = "2000px";
+// document.querySelector(".panorama").style.width = "2000px";
 
-document
-  .querySelector(".slider-dot")
-  .addEventListener("mousedown", function (e) {
-    const sliderDot = this;
-    const slider = document.querySelector(".slider");
-    const startX = e.pageX - slider.offsetLeft - sliderDot.offsetLeft;
+// document
+//   .querySelector(".slider-dot")
+//   .addEventListener("mousedown", function (e) {
+//     const sliderDot = this;
+//     const slider = document.querySelector(".slider");
+//     const startX = e.pageX - slider.offsetLeft - sliderDot.offsetLeft;
 
-    function moveSlider(e) {
-      let newX = e.pageX - slider.offsetLeft - startX;
-      newX = Math.max(0, Math.min(newX, sliderWidth));
+//     function moveSlider(e) {
+//       let newX = e.pageX - slider.offsetLeft - startX;
+//       newX = Math.max(0, Math.min(newX, sliderWidth));
 
-      sliderDot.style.transform = `translateX(${newX}px)`;
-      document.querySelector(".panorama").style.left = `${
-        -newX * (2000 / 400)
-      }px`;
-    }
+//       sliderDot.style.transform = `translateX(${newX}px)`;
+//       document.querySelector(".panorama").style.left = `${
+//         -newX * (2000 / 400)
+//       }px`;
+//     }
 
-    function stopSlider() {
-      document.removeEventListener("mousemove", moveSlider);
-      document.removeEventListener("mouseup", stopSlider);
-    }
+//     function stopSlider() {
+//       document.removeEventListener("mousemove", moveSlider);
+//       document.removeEventListener("mouseup", stopSlider);
+//     }
 
-    document.addEventListener("mousemove", moveSlider);
-    document.addEventListener("mouseup", stopSlider);
-  });
+//     document.addEventListener("mousemove", moveSlider);
+//     document.addEventListener("mouseup", stopSlider);
+//   });
 
 const canvas = document.getElementByID("drawing-board");
 const toolbar = document.getElementById("toolbar");
@@ -80,7 +80,7 @@ toolbar.addEventListener("change", (e) => {
   }
 });
 
-const draw = (e) {
+const draw = (e) => {
   if (!isDrawing) {
     return;
   }
