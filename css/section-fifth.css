@@ -330,6 +330,7 @@
   overflow: hidden;
   background-color: white;
   height: 500px;
+  width: 500px;
   cursor: pointer;
   /* cursor: url('../images/section-fifth/kredka.cur') 5 5, pointer; */
 }
