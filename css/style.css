@@ -34,13 +34,9 @@ html {
   opacity: 1;
 }
 
-
-.numbers--animation {
-  /* animation: slide-in-right 1s ease-out; */
-}
-
 .numbers--animation:hover {
   animation: shake 0.3s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes slide-in-right {
