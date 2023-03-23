@@ -191,10 +191,15 @@
   }
 }
 
+@media (max-width: 320px) {
+  .fourth__slider__divider {
+    height: 100px;
+  }
+}
+
 .fourth__slider__picture {
   overflow: hidden;
   height: 500px;
-  /* position: relative; */
 }
 
 @media (max-width: 768px) {
@@ -206,6 +211,7 @@
 @media (max-width: 320px) {
   .fourth__slider__picture {
     height: 235px;
+    height: 100%;
   }
 }
 
@@ -213,7 +219,30 @@
   width: 100%;
   height: 100%;
   display: block;
-  position: relative
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .panorama .slider__picture__panorama {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+}
+
+@media (max-width: 320px) {
+  .panorama .slider__picture__panorama {
+    height: 100%;
+    display: block;
+    position: relative;
+  }
+}
+
+.slider__picture__range__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider__picture__range {
@@ -221,7 +250,13 @@
   background-color: transparent;
   width: 407px;
   height: 226px;
-  border-radius: 9.5px;
+}
+
+@media (max-width: 320px) {
+  .slider__picture__range {
+    width: 165px;
+    height: 120px;
+  }
 }
 
 .slider__picture__range::-webkit-slider-thumb {
@@ -233,13 +268,13 @@
   border-radius: 50%;
   cursor: ew-resize;
   background: #f4c021;
-
 }
 
 @media (max-width: 768px) {
   .slider__picture__range::-webkit-slider-thumb {
     height: 46.63px;
     width: 46.63px;
+    margin-top: -13.8px;
   }
 }
 
@@ -247,23 +282,35 @@
   .slider__picture__range::-webkit-slider-thumb {
     height: 20.26px;
     width: 20.26px;
+    margin-top: -6.28px;
   }
 }
 
 .slider__picture__range::-webkit-slider-runnable-track {
-    background: #ffecb3;
-    border-radius: 9.5px;
-    cursor: pointer;
-    height: 19px;
-    width: 407px;
+  -webkit-appearance: none;
+  background: #ffecb3;
+  border-radius: 9.5px;
+  cursor: pointer;
+  height: 19px;
+  width: 407px;
+}
 
-    
+@media (max-width: 768px) {
+  .slider__picture__range::-webkit-slider-runnable-track {
+    border-radius: 2.43px;
+  }
+}
+
+@media (max-width: 320px) {
+  .slider__picture__range::-webkit-slider-runnable-track {
+    width: 165px;
+    height: 7.7px;
+  }
 }
 
 .slider__picture__range:focus {
   outline: none;
 }
-
 
 @media (max-width: 768px) {
   .fourth__slider__slider {

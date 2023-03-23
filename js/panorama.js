@@ -8,3 +8,19 @@ function getImg() {
 }
 
 getImg();
+
+const resolutions = [
+  { width: 320, min: -2500, max: 0 },
+  { width: 768, min: -2000, max: 0 },
+  { width: 1244, min: -1525, max: 0 },
+  { width: Infinity, min: -1525, max: 0 },
+];
+
+window.addEventListener("resize", function () {
+  const screenWidth = window.innerWidth;
+  const rangeElement = document.getElementById("imgRange");
+  const { min, max } = resolutions.find((r) => screenWidth <= r.width);
+
+  rangeElement.setAttribute("min", min);
+  rangeElement.setAttribute("max", max);
+});

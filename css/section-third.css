@@ -47,11 +47,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .section__third__upper {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+
 .section__third__number {
   padding-top: 50px;
   margin-left: -10px;
   padding-left: 0;
   font-size: 198px;
+  font-weight: 600;
   font-family: "Neuzeit Grotesk", sans-serif;
   max-width: 115px;
   width: 100%;
@@ -251,9 +258,10 @@
 @media (max-width: 320px) {
   .third__text__topper {
     font-size: 3.125vw;
-    padding-top: 30px;
-    height: 120px;
+    padding-top: 70px;
+    height: 167px;
     grid-column: span 3;
+    margin-top: 0;
   }
 }
 
@@ -354,6 +362,7 @@
   margin-bottom: -1.6em;
   align-content: center;
   font-size: 198px;
+  font-weight: 600;
   font-family: "Neuzeit Grotesk", sans-serif;
 }
 
