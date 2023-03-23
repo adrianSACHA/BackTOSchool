@@ -1,4 +1,7 @@
-@import url(https://db.onlinewebfonts.com/c/180ca1285125dca23ad9e2112675649c?family=Neuzeit+Grotesk);
+@font-face {
+    font-family: "Neuzeit Grotesk";
+    src: url("../font/Neuzeit-Grotesk-Bold.ttf");
+}
 
 html {
   box-sizing: border-box;
