@@ -17,35 +17,20 @@ function showSlides(n) {
   dots[slideIndex - 1].classList.add("active");
 }
 
-// const sliderWidth =
-//   document.querySelector(".slider").offsetWidth -
-//   document.querySelector(".slider-dot").offsetWidth;
+window.addEventListener('scroll', reveal);
 
-// document.querySelector(".panorama").style.width = "2000px";
+function reveal() {
+  const reveals = document.querySelectorAll('.reveal');
 
-// document
-//   .querySelector(".slider-dot")
-//   .addEventListener("mousedown", function (e) {
-//     const sliderDot = this;
-//     const slider = document.querySelector(".slider");
-//     const startX = e.pageX - slider.offsetLeft - sliderDot.offsetLeft;
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const revealTop = reveals[i].getBoundingClientRect().top;
+    const revealPoint = 50;
 
-//     function moveSlider(e) {
-//       let newX = e.pageX - slider.offsetLeft - startX;
-//       newX = Math.max(0, Math.min(newX, sliderWidth));
-
-//       sliderDot.style.transform = `translateX(${newX}px)`;
-//       document.querySelector(".panorama").style.left = `${
-//         -newX * (2000 / 400)
-//       }px`;
-//     }
-
-//     function stopSlider() {
-//       document.removeEventListener("mousemove", moveSlider);
-//       document.removeEventListener("mouseup", stopSlider);
-//     }
-
-//     document.addEventListener("mousemove", moveSlider);
-//     document.addEventListener("mouseup", stopSlider);
-//   });
-
+    if (revealTop < windowHeight - revealPoint) {
+      reveals[i].classList.add('slide-in');
+    } else {
+      reveals[i].classList.remove('slide-in');
+    }
+  }
+}

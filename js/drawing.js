@@ -4,7 +4,7 @@ const ctx = canvas.getContext("2d");
 const canvasOffsetX = canvas.offsetLeft;
 const canvasOffsetY = canvas.offsetTop;
 
-canvas.width = "516";
+canvas.width = "559";
 canvas.height = "593";
 
 let isPainting = false;
@@ -21,7 +21,7 @@ const draw = (e) => {
 
   ctx.lineTo(
     e.clientX - canvasOffsetX,
-    e.clientY - canvasOffsetY + window.scrollY
+    (e.clientY - canvasOffsetY) + window.scrollY
   );
   ctx.stroke();
 };

@@ -23,6 +23,18 @@ html {
   overflow-x: hidden;
 }
 
+.reveal {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+.reveal.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+
 .numbers--animation {
   /* animation: slide-in-right 1s ease-out; */
 }

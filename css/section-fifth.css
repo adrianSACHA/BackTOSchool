@@ -312,13 +312,13 @@
   cursor: pointer;
 }
 
-.fifth__bottom__ai {
+.fifth__bottom__drawing {
   display: flex;
   height: 599px;
 }
 
 @media (max-width: 768px) {
-  .fifth__bottom__ai {
+  .fifth__bottom__drawing {
     display: none;
   }
 }

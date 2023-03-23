@@ -106,10 +106,10 @@
   }
 }
 
-.section__second--animation {
+/* .section__second--animation {
   animation: slide 1s ease-out;
   overflow: hidden;
-}
+} */
 
 .second__wrapper__footer {
   grid-column: span 2;
