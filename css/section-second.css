@@ -122,7 +122,8 @@
   font-family: "Neuzeit Grotesk", sans-serif;
   font-weight: bold;
   font-size: 15.98vw;
-  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
@@ -138,9 +139,8 @@
   }
 }
 
-.section__numbers--animations {
-  cursor: pointer;
-  animation: linear 1s slide;
+.second__number__span {
+  width: 100px;
 }
 
 .section__second__divider {

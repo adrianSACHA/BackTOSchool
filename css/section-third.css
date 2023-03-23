@@ -48,13 +48,15 @@
 }
 
 .section__third__number {
-  text-align: left;
   padding-top: 50px;
   margin-left: -10px;
   padding-left: 0;
   font-size: 198px;
   font-family: "Neuzeit Grotesk", sans-serif;
   max-width: 115px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
 }
 
 @media (max-width: 768px) {
@@ -62,7 +64,8 @@
     padding-top: 99px;
     font-size: 176px;
     margin-bottom: -199px;
-    max-width: 125px;
+    width: 100%;
+    max-width: 121px;
     margin-right: 12px;
   }
 }
@@ -357,6 +360,7 @@
 @media (max-width: 768px) {
   .third__text__footer {
     align-content: unset;
+    justify-items: end;
     grid-row: 1/2;
     text-align: right;
     padding-right: 0.2em;
