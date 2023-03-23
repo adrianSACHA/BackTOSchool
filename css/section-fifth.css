@@ -323,11 +323,11 @@
   }
 }
 
-.bottom__ai__divider {
+.bottom__divider {
   width: 96px;
 }
 
-.bottom__ai__drawing {
+.bottom__drawing {
   background-color: #0e0a06;
   cursor: pointer;
   height: 100%;
