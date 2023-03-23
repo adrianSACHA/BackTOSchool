@@ -64,8 +64,8 @@
                 </span>
             </div>
             <div class="second__wrapper__footer">
-                <div class="second__footer__number  numbers--animation reveal">
-                    2
+                <div class="second__footer__number  ">
+                   <span class="second__number__span numbers--animation reveal">2</span> 
                 </div>
             </div>
         </div>
@@ -75,13 +75,15 @@
     <section class="section__third">
         <div class="section__third__wrapper">
             <div class="section__third__upper">
-                <div class="section__third__number numbers--animation reveal">
-                    7
+                <div class="section__third__number ">
+                    <span class="numbers--animation reveal">
+                        7
+                    </span>
                 </div>
                 <div class="section__third__pictures">
                     <div class="third__pictures__slider">
                         <div class="pictures__slider__wrapper">
-                            <div class="pictures__slider__pics slide">
+                            <div class="pictures__slider__pics">
                                 <img src="./images/section-third/4F_BTS_LANDING_DESKTOP1_0023_210803_4F_0929.png" class="third__pictures__picture"/>
                             </div>
                             <div class="pictures__slider__pics slide">
@@ -165,17 +167,11 @@
         <div class="section__fourth__slider">
             <div class="fourth__slider__divider"></div>
             <div class="fourth__slider__picture">
-                <img src="./images/section-fourth/210803_4F_0485.png" class="panorama slider__picture__panorama" alt="panorama"/>
+                <img src="./images/section-fourth/210803_4F_0485.png" class="panorama slider__picture__panorama" id="panorama"  alt="panorama"/>
             </div>
-                <div class="slider__wrapper slider">
-                    <div class="slider__dot slider-dot">
-                    </div>
-                    <!-- <div class="slider__line">
-                        <div class="slider__line__fill">
-                        </div>
-                    </div> -->
-                </div>
-            
+            <div class="slider__picture__range__wrapper">
+                <input type="range" min="-1525" max="0" value="-1707" step="1" class="slider__picture__range" id="imgRange" >
+            </div>
         </div>
     </section>
     <section class="section__fourth__divider">
