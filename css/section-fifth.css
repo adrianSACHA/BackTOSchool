@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 
+
 @media (max-width: 768px) {
   .section__fifth {
     height: 2508px;
@@ -330,9 +331,5 @@
   background-color: #0e0a06;
   cursor: pointer;
   height: 100%;
-}
-
-.bottom__ai__drawing {
- cursor: url('../images/section-fifth/kredka.cur'), pointer;
-
+  cursor: url('../images/section-fifth/kredka32.png'), pointer;
 }

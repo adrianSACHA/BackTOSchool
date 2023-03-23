@@ -1,5 +1,4 @@
 const canvas = document.getElementById("drawing-board");
-const toolbar = document.getElementById("toolbar");
 const ctx = canvas.getContext("2d");
 
 const canvasOffsetX = canvas.offsetLeft;
@@ -9,18 +8,21 @@ canvas.width = "516";
 canvas.height = "593";
 
 let isPainting = false;
-let lineWidth = "";
+let lineWidth = "5";
 
 const draw = (e) => {
   if (!isPainting) {
     return;
   }
 
-  ctx.lineWidth = "5";
+  ctx.lineWidth = lineWidth;
   ctx.lineCap = "round";
   ctx.strokeStyle = "#f3e261";
 
-  ctx.lineTo(e.clientX - canvasOffsetX, e.clientY - canvasOffsetY + window.scrollY);
+  ctx.lineTo(
+    e.clientX - canvasOffsetX,
+    e.clientY - canvasOffsetY + window.scrollY
+  );
   ctx.stroke();
 };
 
