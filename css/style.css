@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Neuzeit Grotesk";
-    src: url("../font/Neuzeit-Grotesk-Bold.ttf");
+  font-family: "Neuzeit Grotesk";
+  src: url("../font/Neuzeit-Grotesk-Bold.ttf");
 }
 
 html {
@@ -19,8 +19,14 @@ html {
   background-color: #fff;
   word-break: break-word;
   max-width: 1242px;
-  margin: 0 auto;
-  overflow-x: hidden;
+  /* margin: 0 auto; */
+  overflow-x: auto;
+}
+
+@media (max-width: 320px) {
+  .body {
+    width: 320px;
+  }
 }
 
 .reveal {
@@ -37,16 +43,6 @@ html {
 .numbers--animation:hover {
   animation: shake 0.3s linear infinite;
   cursor: pointer;
-}
-
-@keyframes slide-in-right {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0%);
-  }
 }
 
 @keyframes shake {
@@ -109,16 +105,6 @@ html {
   }
   100% {
     transform: translateY(0);
-  }
-}
-
-@keyframes slide {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(0%);
   }
 }
 

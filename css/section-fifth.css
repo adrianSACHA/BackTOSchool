@@ -12,24 +12,22 @@
   overflow: hidden;
 }
 
-
 @media (max-width: 768px) {
   .section__fifth {
     height: 2508px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .section__fifth {
     height: 1091px;
   }
 }
 
-.section__fifth__wrapper {
-}
-
-@media (max-width: 768px) {
+@media (max-width: 425px) {
   .section__fifth__wrapper {
+    width: 320px;
+    overflow: hidden;
   }
 }
 
@@ -43,6 +41,12 @@
   .section__fifth__pictures {
     display: grid;
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .section__fifth__pictures {
+    width: 320px;
   }
 }
 
@@ -61,7 +65,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .fifth__pictures__one {
     height: 100%;
     min-height: 325px;
@@ -73,20 +77,19 @@
   width: 100%;
   max-width: 1074px;
   height: auto;
-  overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
   .fifth__pictures__first {
     max-width: 829px;
     height: auto;
-    overflow-x: hidden;
-    position: absolute;
+    overflow-x: auto;
+    /* position: absolute; */
     left: -40px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .fifth__pictures__first {
     min-height: 227px;
     height: auto;
@@ -114,7 +117,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .fifth__pictures__two {
     grid-template-columns: 1fr 1fr;
     background-repeat: no-repeat;
@@ -137,7 +140,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .fifth__pictures__second {
     min-width: 228px;
     height: auto;
@@ -167,7 +170,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .fifth__pictures__three {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,7 +195,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .fifth__pictures__third {
     display: grid;
     grid-column: 2;
@@ -215,7 +218,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .section__fifth__bottom {
     display: grid;
     height: 174px;
@@ -267,7 +270,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .bottom__menu__buttons {
     grid-gap: 20px;
     margin-right: 0;
@@ -298,7 +301,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .fifth__button {
     width: 140px;
     height: 25px;
@@ -331,5 +334,5 @@
   background-color: #0e0a06;
   cursor: pointer;
   height: 100%;
-  cursor: url('../images/section-fifth/kredka32.png'), pointer;
+  cursor: url("../images/section-fifth/kredka32.png"), pointer;
 }
