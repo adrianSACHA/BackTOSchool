@@ -100,6 +100,8 @@
         grid-template-columns: auto auto;
         height: 60%;
         background-size: 70%;
+        align-items: center;
+
     }
 }
 
@@ -129,10 +131,11 @@
         width: 168px;
         height: 68px;
         margin-bottom: 0.5em;
-        margin-left: 0.7em;
+        margin-left: 0.1em;
         text-align: left;
         font-size: 39px;
         line-height: 0.9;
+        min-height: 0;
     }
 }
 
@@ -146,7 +149,8 @@
     height: fit-content;
     align-items: center;
     color: #f3e261;
-    transform: rotate(270deg);
+    -webkit-transform: rotate(-90deg);
+    writing-mode: lr-tb;
     font-size: 1.65vw;
     padding-left: 4em;
 }
@@ -164,10 +168,10 @@
     .text__right {
         font-weight: normal;
         font-size: 12px;
-        margin-top: 2em;
+        margin-top: 6em;
         padding-left: 1em;
         align-items: unset;
-        margin-right: 0;
+        margin-right: -2em;
         justify-content: center;
     }
 }
