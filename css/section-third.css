@@ -65,6 +65,7 @@
     width: 100%;
     display: grid;
     grid-template-rows: auto 1fr;
+    font-display: block;
 }
 
 @media (max-width: 768px) {
@@ -367,6 +368,7 @@
     font-size: 198px;
     font-weight: 600;
     font-family: "Neuzeit Grotesk", sans-serif;
+    font-display: block;
 }
 
 @media (max-width: 768px) {

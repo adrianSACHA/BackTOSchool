@@ -134,6 +134,7 @@
     font-size: 198px;
     display: flex;
     justify-content: flex-end;
+    font-display: block;
 }
 
 @media (max-width: 768px) {
