@@ -103,7 +103,7 @@
 @media (max-width: 425px) {
     .section__third__pictures {
         margin-top: 0;
-        min-width: 223px;
+        width: 223px;
         height: auto;
     }
 }
