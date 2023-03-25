@@ -19,15 +19,12 @@ html {
   background-color: #fff;
   word-break: break-word;
   max-width: 1242px;
-  /* margin: 0 auto; */
-  overflow-x: auto;
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: visible;
 }
 
-@media (max-width: 320px) {
-  .body {
-    width: 320px;
-  }
-}
+
 
 .reveal {
   transform: translateX(100%);
