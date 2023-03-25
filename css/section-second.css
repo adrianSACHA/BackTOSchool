@@ -1,159 +1,166 @@
 .section__second {
-  background: linear-gradient(
-    to bottom,
-    #fff 0%,
-    #fff 31%,
-    #96bad8 31%,
-    #96bad8 91%,
-    #fff 91%,
-    #fff 100%
-  );
-  height: 1138px;
+    background: linear-gradient(
+            to bottom,
+            #fff 0%,
+            #fff 31%,
+            #96bad8 31%,
+            #96bad8 91%,
+            #fff 91%,
+            #fff 100%
+    );
+    max-width: 1242px;
+    height: 1138px;
 }
 
 @media (max-width: 768px) {
-  .section__second {
-    background: linear-gradient(
-      to bottom,
-      #fff 0%,
-      #fff 28%,
-      #96bad8 28%,
-      #96bad8 78%,
-      #fff 78%,
-      #fff 100%
-    );
-    height: 1044px;
-  }
+    .section__second {
+        max-width: 768px;
+        background: linear-gradient(
+                to bottom,
+                #fff 0%,
+                #fff 28%,
+                #96bad8 28%,
+                #96bad8 78%,
+                #fff 78%,
+                #fff 100%
+        );
+        height: 1044px;
+    }
 }
 
 @media (max-width: 425px) {
-  .section__second {
-    height: 464px;
-    background: linear-gradient(
-      to bottom,
-      #fff 0%,
-      #fff 27%,
-      #96bad8 27%,
-      #96bad8 76%,
-      #fff 76%,
-      #fff 100%
-    );
-  }
+    .section__second {
+        max-width: 425px;
+        width: 100%;
+        height: 464px;
+        background: linear-gradient(
+                to bottom,
+                #fff 0%,
+                #fff 27%,
+                #96bad8 27%,
+                #96bad8 76%,
+                #fff 76%,
+                #fff 100%
+        );
+    }
 }
 
 .section__second__wrapper {
-  background-image: url("../images/section-first/4F_BTS_LANDING_DESKTOP1_0020_kratka.png");
-  background-repeat: no-repeat;
-  background-size: 26.5%;
-  background-position-x: center;
-  background-position-y: 260px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  height: 100%;
+    background-image: url("../images/section-first/4F_BTS_LANDING_DESKTOP1_0020_kratka.png");
+    background-repeat: no-repeat;
+    background-size: 26.5%;
+    background-position-x: center;
+    background-position-y: 260px;
+    /*display: grid;*/
+    /*grid-template-columns: 2fr 1fr;*/
+    /*height: 100%;*/
+    /*width: 100%;*/
 }
 
 @media (max-width: 768px) {
-  .section__second__wrapper {
-    background-position-y: 218px;
-    background-size: 70%;
-  }
+    .section__second__wrapper {
+        background-position-y: 218px;
+        background-size: 70%;
+    }
 }
 
 @media (max-width: 425px) {
-  .section__second__wrapper {
-    background-position-y: 95px;
-    background-size: 75%;
-  }
+    .section__second__wrapper {
+        background-position-y: 95px;
+        background-size: 75%;
+    }
 }
 
 .section__image {
-  width: 100%;
-  max-width: 617px;
-  height: auto;
+    width: 100%;
+    max-width: 617px;
+    height: auto;
 }
 
 @media (max-width: 768px) {
-  .section__image {
-    max-width: 467px;
-  }
+    .section__image {
+        max-width: 467px;
+        width: 100%;
+        display: flex;
+    }
 }
 
 @media (max-width: 425px) {
-  .section__image {
-    min-width: 200px;
-  }
+    .section__image {
+        max-width: 200px;
+    }
 }
 
 .second__wrapper__right {
-  display: flex;
-  color: #283684;
-  font-weight: bold;
-  font-size: 22px;
-  letter-spacing: -0.05em;
-  text-align: left;
-  padding-top: 260px;
+    display: flex;
+    color: #283684;
+    font-weight: bold;
+    font-size: 22px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    padding-top: 260px;
 }
 
 @media (max-width: 768px) {
-  .second__wrapper__right {
-    display: none;
-  }
+    .second__wrapper__right {
+        display: none;
+    }
 }
 
 @media (max-width: 425px) {
-  .second__wrapper__right {
-    display: none;
-  }
+    .second__wrapper__right {
+        display: none;
+    }
 }
 
 .second__wrapper__footer {
-  grid-column: span 2;
+    grid-column: span 2;
 }
 
 .second__footer__number {
-  color: #1b1509;
-  max-width: 100%;
-  padding-right: 1em;
-  font-family: "Neuzeit Grotesk", sans-serif;
-  font-weight: 600;
-  font-size: 198.36px;
-  display: flex;
-  justify-content: flex-end;
+    color: #1b1509;
+    /*max-width: 100%;*/
+    padding-right: 1em;
+    font-family: "Neuzeit Grotesk", sans-serif;
+    font-weight: 600;
+    font-size: 198px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (max-width: 768px) {
-  .second__footer__number {
-    font-size: 176px;
-    padding-top: 1em;
-    font-weight: 400;
-  }
+    .second__footer__number {
+        font-size: 176px;
+        padding-top: 1em;
+        font-weight: 400;
+    }
 }
 
 @media (max-width: 425px) {
-  .second__footer__number {
-    height: 50%;
-    padding-top: 0.3em;
-    font-size: 76.47px;
-  }
+    .second__footer__number {
+
+        /*padding-top: 0.3em;*/
+        font-size: 76px;
+    }
 }
 
 .second__number__span {
-  width: 100px;
+    /*width: 100px;*/
 }
 
 .section__second__divider {
-  height: 152px;
-  background-color: #fff;
+    height: 152px;
+    background-color: #fff;
 }
 
 @media (max-width: 768px) {
-  .section__second__divider {
-    height: 150px;
-  }
+    .section__second__divider {
+        height: 150px;
+    }
 }
 
 @media (max-width: 425px) {
-  .section__second__divider {
-    display: none;
-  }
+    .section__second__divider {
+        display: none;
+    }
 }
