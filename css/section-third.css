@@ -191,8 +191,7 @@
     cursor: pointer;
 }
 
-.pictures__dots__dot:hover,
-.active {
+.pictures__dots__dot:hover {
     background-color: #ffc313;
 }
 

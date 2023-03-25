@@ -152,7 +152,7 @@
     -webkit-transform: rotate(-90deg);
     writing-mode: lr-tb;
     font-size: 1.65vw;
-    padding-left: 4em;
+    margin-bottom: 4em;
 }
 
 @media (max-width: 768px) {
@@ -160,6 +160,7 @@
         font-size: 3vw;
         padding-right: 1em;
         align-items: unset;
+        padding-left: 4em;
         margin-bottom: -3em;
     }
 }

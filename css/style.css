@@ -24,8 +24,6 @@ html {
   overflow-x: visible;
 }
 
-
-
 .reveal {
   transform: translateX(100%);
   opacity: 0;

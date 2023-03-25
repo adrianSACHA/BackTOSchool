@@ -1,6 +1,7 @@
 .section__fifth {
   height: 2054px;
   display: grid;
+  max-width: 1242px;
   grid-template-columns: 1fr;
   background: linear-gradient(
     to bottom,
@@ -27,7 +28,7 @@
 @media (max-width: 425px) {
   .section__fifth__wrapper {
     width: 320px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 }
 
@@ -83,8 +84,7 @@
   .fifth__pictures__first {
     max-width: 829px;
     height: auto;
-    overflow-x: auto;
-    /* position: absolute; */
+    overflow-x: hidden;
     left: -40px;
   }
 }
@@ -332,7 +332,6 @@
 
 .bottom__drawing {
   background-color: #0e0a06;
-  cursor: pointer;
   height: 100%;
   cursor: url("../images/section-fifth/kredka32.png"), pointer;
 }
