@@ -8,35 +8,35 @@ let isPainting = false;
 let lineWidth = 5;
 
 const draw = (e) => {
-  if (!isPainting) {
-    return;
-  }
+    if (!isPainting) {
+        return;
+    }
 
-  ctx.lineWidth = lineWidth;
-  ctx.lineCap = "round";
-  ctx.strokeStyle = "#f3e261";
+    ctx.lineWidth = lineWidth;
+    ctx.lineCap = "round";
+    ctx.strokeStyle = "#f3e261";
 
-  const canvasOffsetX = canvas.offsetLeft;
-  const canvasOffsetY = canvas.offsetTop;
-  const x = e.clientX - canvasOffsetX;
-  const y = e.clientY - canvasOffsetY + window.scrollY;
+    const canvasOffsetX = canvas.offsetLeft;
+    const canvasOffsetY = canvas.offsetTop;
+    const x = e.clientX - canvasOffsetX;
+    const y = e.clientY - canvasOffsetY + window.scrollY;
 
-  ctx.lineTo(x, y);
-  ctx.stroke();
+    ctx.lineTo(x, y);
+    ctx.stroke();
 };
 
 canvas.addEventListener("mousedown", (e) => {
-  isPainting = true;
-  const canvasOffsetX = canvas.offsetLeft;
-  const canvasOffsetY = canvas.offsetTop;
-  const x = e.clientX - canvasOffsetX;
-  const y = e.clientY - canvasOffsetY + window.scrollY;
-  ctx.beginPath();
-  ctx.moveTo(x, y);
+    isPainting = true;
+    const canvasOffsetX = canvas.offsetLeft;
+    const canvasOffsetY = canvas.offsetTop;
+    const x = e.clientX - canvasOffsetX;
+    const y = e.clientY - canvasOffsetY + window.scrollY;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
 });
 
 canvas.addEventListener("mouseup", (e) => {
-  isPainting = false;
+    isPainting = false;
 });
 
 canvas.addEventListener("mousemove", draw);

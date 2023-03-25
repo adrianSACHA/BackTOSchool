@@ -53,8 +53,6 @@
     background-position-y: 260px;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    /*height: 100%;*/
-    /*width: 100%;*/
 }
 
 @media (max-width: 768px) {
@@ -130,7 +128,6 @@
 
 .second__footer__number {
     color: #1b1509;
-    /*max-width: 100%;*/
     padding-right: 1em;
     font-family: "Neuzeit Grotesk", sans-serif;
     font-weight: 600;
@@ -149,14 +146,8 @@
 
 @media (max-width: 425px) {
     .second__footer__number {
-
-        /*padding-top: 0.3em;*/
         font-size: 76px;
     }
-}
-
-.second__number__span {
-    /*width: 100px;*/
 }
 
 .section__second__divider {
